@@ -101,7 +101,7 @@ app
 
 app.get(
   "/auth/google/home",
-  passport.authenticate("google", { failureRedirect: "/login" }),
+  passport.authenticate("google", { failureRedirect: "/" }),
   function (req, res) {
     // Successful authentication, redirect home.
     res.redirect("/home");
@@ -146,10 +146,10 @@ app.post("/register", function (req, res) {
 });
 
 app.post(
-  "/login",
+  "/",
   passport.authenticate("local", {
     successRedirect: "/home",
-    failureRedirect: "/login",
+    failureRedirect: "/",
   })
 );
 
@@ -159,16 +159,14 @@ app.get("/form", function (req, res) {
 });
 
 //Registering data to db
-// app.post("/form-submit", function (req, res) {
-//   User.findOneAndUpdate({email:},{
-//     firstname: req.body.firstname,
-//     lastname: req.body.lastname,
-//     state: req.body.state,
-//     district: req.body.district,
-//   });
-// });
-
-//Collecting data from the user
+app.post("/form-submit", function (req, res) {
+  User.create({
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
+    state: req.body.state,
+    district: req.body.district,
+  });
+});
 
 app.listen(3000, function () {
   console.log("Server running on port 3000");
