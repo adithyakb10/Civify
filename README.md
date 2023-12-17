@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Civify</h1>
 
-<p align="center"><img src="https://socialify.git.ci/adithyakb10/Civify/image?description=1&amp;font=Raleway&amp;name=1&amp;owner=1&amp;pattern=Charlie%20Brown&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+<p align="center"><img width="500px" src="https://socialify.git.ci/adithyakb10/Civify/image?description=1&amp;font=Raleway&amp;name=1&amp;owner=1&amp;pattern=Charlie%20Brown&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
 <p id="description">A website made for reporting civic issues made as a part of my college</p>
 
