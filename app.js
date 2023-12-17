@@ -117,7 +117,11 @@ app.get("/register", (req, res) => {
 //Rendering Home Page
 
 app.get("/home", (req, res) => {
-  res.render("home.ejs");
+  if (req.isAuthenticated()) {
+    res.render("home.ejs");
+  } else {
+    res.redirect("/");
+  }
 });
 
 //Rendering Form Page
