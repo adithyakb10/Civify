@@ -159,13 +159,14 @@ app.get("/form", function (req, res) {
 });
 
 //Registering data to db
-app.post("/form-submit", function (req, res) {
-  User.create({
+app.post("/form-submit", async function (req, res) {
+  await User.create({
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     state: req.body.state,
     district: req.body.district,
   });
+  res.render("form-submit.ejs");
 });
 
 app.listen(3000, function () {
