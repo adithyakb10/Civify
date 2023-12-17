@@ -1,10 +1,22 @@
-<h1 align="center"> Civify </h1>
-A website made for reporting civic issues
-Made as a part of my college project
-<ul>
-<li>Full stack website</li>
-<li>Users can sign up and login</li>
-</ul>
+<h1 align="center" id="title">Civify</h1>
+
+<p align="center"><img src="https://socialify.git.ci/adithyakb10/Civify/image?description=1&amp;font=Raleway&amp;name=1&amp;owner=1&amp;pattern=Charlie%20Brown&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+
+<p id="description">A website made for reporting civic issues made as a part of my college</p>
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here are some of the project's best features:
+
+*   Full Stack Website
+*   Authentication
+*   Sign up and login
+
+  
+  
+
 <h2>💻 Tech stack</h2>
 <h3>Front end:</h3>
 <p align="center">
@@ -24,3 +36,7 @@ Made as a part of my college project
     <img src="https://skillicons.dev/icons?i=mongodb" />
   </a>
 </p>
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the MIT License
