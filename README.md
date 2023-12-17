@@ -1,4 +1,4 @@
-<h1 align="center"> EverBloom </h1>
+<h1 align="center"> Civify </h1>
 A website made for reporting civic issues
 Made as a part of my college project
 <ul>
